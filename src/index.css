@@ -1,5 +1,187 @@
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  background-color: #f8f8f8;
+  font-family: monospace;
 }
+
+a {
+  text-decoration: none;
+}
+
+#root{
+  position: ABSOLUTE;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+#app {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content:center;
+  height: 90vh;
+
+}
+.spinners-holders {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 100%;
+  height: 55px;
+  transition: all 1s ease;
+}
+
+.bits {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 100%;
+  height: 55px;
+  transition:all 1s ease;
+}
+
+.bit {
+  position:relative;
+  width:35px;
+  height:55px;
+  overflow: hidden;
+  float: left;
+}
+
+.bit-char {
+  width: 45px;
+  height:55px;
+  font-size:45px;
+  line-height: 1;
+  opacity: 0.5;
+  transition:opacity 2s ease;
+  color:#42e42f;
+}
+
+.bit-char.active {
+  opacity: 1;
+  text-shadow: 0 0 8px #7ac586;
+}
+
+.input-item{
+  margin-right: 32px;
+}
+
+
+.bit-inputs {
+  width: 400px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 55px;
+}
+
+.else {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url('/font/MonoSocialIconsFont-1.10.eot');
+  src: url('/font/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+  url('/font/MonoSocialIconsFont-1.10.woff') format('woff'),
+  url('/font/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+  url('/font/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: url('/font/MonoSocialIconsFont-1.10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.symbol {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: #ccc;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.symbol:hover {
+  text-shadow: 0 0 8px #7ac586;
+
+}
+
+.elsewhere {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+.elsewhere h2 {
+  text-transform: lowercase;
+  color: #ccc;
+  font-size: 2.4rem;
+}
+.elsewhere a {
+  color: #ccc;
+  font-size: 1.2rem;
+  transition: 1s all ease-out;
+}
+.elsewhere a:hover {
+  color: #000;
+}
+
+
+
